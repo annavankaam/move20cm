@@ -1,17 +1,15 @@
-maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 50)
-maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 50)
-basic.pause(2000)
-basic.pause(500)
-maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 50)
-maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 50)
-basic.pause(500)
-basic.pause(200)
-maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 50)
-maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 50)
-basic.pause(2000)
-basic.pause(500)
-maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 50)
-maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 50)
+let IR2 = 0
+IR.IR_init()
+let voor = 253
+let achter = 125
+let links = 31
+let rechts = 17
 basic.forever(function () {
 	
+})
+basic.forever(function () {
+    IR2 = IR.IR_read()
+})
+basic.forever(function () {
+    basic.showNumber(IR2)
 })
